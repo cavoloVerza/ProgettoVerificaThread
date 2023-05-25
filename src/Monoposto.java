@@ -23,7 +23,6 @@ public class Monoposto extends Thread{
      * Unico box presente nella gara
      */
     protected Box semaforo;
-    
 
     /**
      * Costruttore della macchina
@@ -69,7 +68,7 @@ public class Monoposto extends Thread{
      * Metodo ereditato dalla classe Thread gestisce i giri e la entrata nei box
      */
     @Override
-    public void run() {
+    public void run() { 
 
         for(int i = 1; i <= 10; i++) {
 
@@ -90,6 +89,7 @@ public class Monoposto extends Thread{
 
                 semaforo.P();
                 System.out.println("PIT-STOP " + pilota.getNome() + " cambio gomma in corso");
+                System.out.println(" ");
 
                 try {
 
@@ -102,11 +102,13 @@ public class Monoposto extends Thread{
                 }
 
                 System.out.println("PIT-STOP " + pilota.getNome() + " completato");
+                System.out.println(" ");
                 semaforo.V();
 
             }
 
             System.out.println("GIRO - " + (i) + " " + pilota.getNome() + " completato");
+            System.out.println(" ");
 
         }
 

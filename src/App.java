@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         
-        Box box = new Box(1);
+        Box box = new Box(2);
 
         Pilota p1 = new Pilota("Leclerc");
         Pilota p2 = new Pilota("Bottas");
